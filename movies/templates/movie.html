@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block content %}
+{{ block.super}}
+{% load bootstrap4%}
+
+<div class="container-fluid">
+
+   <div class="jumbotron">
+        <h2 class = "text-center">Life For Movie Show</h2>
+       
+      </div>
+
+
+  <div class="pot">
+    <div class="row">
+      <div class="col-md-1">
+
+      </div>
+      <div class="col-md-6">
+        <br>
+        <h4>Movie on the Show</h4>
+        {% for chu in activ %}
+
+        <img class="d-block -100 img-fluid" src="{{chu.path.url}}" alt="{{user.username}}" style="height: 200px;">
+        <div class="card-body">
+          <p class="card-text">{{chu.name}}</p>
+        </div>
+        <div class="card-footer text-muted">
+
+        </div>
+        <ul class="list-group list-group-flush">
+
+        </ul>
+        {% endfor %}
+      </div>
+
+
+      <div class="col-md-5">
+        <br>
+        <h3>Available Movies</h3>
+        {% for you in yuu %}
+
+        <img class="d-block -20 img fluid" src="{{you.image_path.url}}" alt="{{user.username}}" style="height: 200px;">
+        <div class="card-body">
+          <p class="card_text">{{you.path.url}}</p>
+        </div>
+        <div class="card-footer text-muted">
+
+          </div>
+          <ul class="list-group list-group-flush">
+
+          </ul>
+          {% endfor %}
+      </div>
+      
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block content %}
+{{ block.super}}
+{% load bootstrap4%}
+<div class="container">
+  <div class="row">
+    <div class="col-md-7" style="height: 700px; background-image: url('https://previews.123rf.com/images/dinozzaver/dinozzaver1611/dinozzaver161100850/66302151-residential-neighborhood-buildings-in-guilin-and-famous-karst-mountain-landscape-in-the-background-c.jpg');">
+      <h2>Welcome to Movie Show</h2>
+    </div>
+    <div class="col-md-9" style="margin-left: 700px;margin-top: -800px;">
+    <div class="all" >
+    
+        {% if user.is_authenticated %}
+        <h6>Sign in to movie</h6>
+  
+        {% for x in movie %}
+  
+        <div class="hood">
+          <a href="{% url 'home' x.id %}">
+            <li>{{x.movie_name}}</li>
+          </a>
+        </div>
+  
+        {% endfor %}
+        <br>
+        <h6>Not Yet registered to a Movie? signup here</h6>
+        <div class="hd">
+          <a href="{% url 'movie'%}">Register Movie</a>
+        </div>
+        {% else %}
+  
+        <div class="see">
+          <p>Please <a href="/register">SIGNUP </a> to enjoy your SHOW</p>
+          <br>
+          <p>Already have an account <a href="/account/login">LOGIN</a> here</p>
+        </div>
+  
+        {% endif %}
+  
+    </div>
+</div>
+</div>
+ </div>
+ 
+{% endblock %}

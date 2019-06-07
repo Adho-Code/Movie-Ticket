@@ -1,0 +1,221 @@
+{% load bootstrap4%}
+{% load static %}
+
+
+
+
+{% block styles%}
+{%bootstrap_css%}
+
+
+<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/css/mdb.min.css" rel="stylesheet">
+{% endblock%}
+{%block scripts%}
+{%bootstrap_javascript%}
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/js/mdb.min.js"></script>
+
+{%endblock%}
+{% block content%}
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark primary-color">
+
+  <!-- Navbar brand -->
+  <a class="navbar-brand" href="#">Navbar</a>
+
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.kenyabuzz.com/movies/">Movies</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Gallery</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#"> Sign up</a>
+      </li>
+
+
+
+
+
+      
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <!-- <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">Dropdown</a> -->
+        <!-- <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div> -->
+      </li>
+
+    </ul>
+    <!-- Links -->
+
+    <form class="form-inline">
+      <div class="md-form my-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      </div>
+    </form>
+  </div>
+  <!-- Collapsible content -->
+
+</nav>
+<!--/.Navbar-->
+
+<div class="container-fluid">
+
+  <div class="jumbotron">
+    <h2 class="text-center">Welcome to Movie Show</h2>
+
+  </div>
+
+
+
+  <div class="row">
+    <div class="col-md-3">
+      <a data-fancybox="gallery" href="https://images.fandango.com/ImageRenderer/200/0/redesign/static/img/default_poster.png/0/images/masterrepository/Fandango/208497/DarkPhoenix_Rated_VerC.JPG">
+        <img
+          src="https://images.fandango.com/ImageRenderer/200/0/redesign/static/img/default_poster.png/0/images/masterrepository/Fandango/208497/DarkPhoenix_Rated_VerC.JPG"
+          alt="image">
+      </a>
+      <a href="https://www.kenyabuzz.com/booking/movie-ticket?id=348&title=dark-phoenix">
+      <button class="btn btn-info">BUY TICKET</button>
+    </a>
+      
+
+
+
+    </div>
+    <div class="col-md-3">
+
+<a data-fancybox="gallery" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-t9FrGdDc2nRhln0cT79IO1OJoOgp9OJYlPdjjXhC-6t_gx3y2w">
+      <img style="padding-right: 5%"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-t9FrGdDc2nRhln0cT79IO1OJoOgp9OJYlPdjjXhC-6t_gx3y2w"
+        alt="image">
+      </a>
+      <a href="https://www.kenyabuzz.com/booking/movie-ticket?id=330&title=avengers-endgame">
+      <button class="btn btn-info">BUY TICKET</button>
+    </a>
+    </div>
+
+
+    <div class="col-md-3">
+
+<a data-fancybox="gallery" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh5PApTveMbtAqXG-HHCI8_CDikN_bOhi_oG2pd2oHIF0aZ-gDaw">
+      <img style="padding-right: 5%"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh5PApTveMbtAqXG-HHCI8_CDikN_bOhi_oG2pd2oHIF0aZ-gDaw"
+        alt="image">
+      </a>
+      <a href="https://www.kenyabuzz.com/booking/movie-ticket?id=330&title=avengers-endgame">
+      <button class="btn btn-info">BUY TICKET</button>
+    </a>
+    
+    </div>
+
+
+    <div class="col-md-3">
+
+<a data-fancybox="gallery" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGBjg-Z10_cHZuxBqtR2wIWy__ZSCEU44RF0RcU9eeY0h6wXp1Iw">
+      <img style="padding-right: 5%"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGBjg-Z10_cHZuxBqtR2wIWy__ZSCEU44RF0RcU9eeY0h6wXp1Iw"
+        alt="image">
+</a>
+<a href="https://www.kenyabuzz.com/movies/movie/spider-man-into-the-spider-verse">
+      <button class="btn btn-info">BUY TICKET</button>
+    </a>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+
+    <div class="col-md-3">
+
+<a data-fancybox="gallery" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6qDias33hkuJ4HSMWw1HWQ0v16EkPKtkyPUItvDR6_cf5f3IaKw">
+      <img style="padding-right: 5%"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6qDias33hkuJ4HSMWw1HWQ0v16EkPKtkyPUItvDR6_cf5f3IaKw"
+        alt="image">
+</a>
+<a href="">
+      <button class="btn btn-info">BUY TICKET</button>
+    </a>
+    </div>
+
+    <div class="col-md-3">
+
+<a data-fancybox="gallery" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6qDias33hkuJ4HSMWw1HWQ0v16EkPKtkyPUItvDR6_cf5f3IaKw">
+      <img style="padding-right: 5%"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6qDias33hkuJ4HSMWw1HWQ0v16EkPKtkyPUItvDR6_cf5f3IaKw"
+        alt="image">
+      <button class="btn btn-info">BUY TICKET</button>
+    </a>
+    </div>
+
+
+
+    <div class="col-md-3">
+
+<a data-fancybox="gallery" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyeg64617PneN8hsjkqdpG2Y3Rt222fxkwR6V5lZ0qgsWPTZ6O">
+      <img style="padding-right: 5%"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyeg64617PneN8hsjkqdpG2Y3Rt222fxkwR6V5lZ0qgsWPTZ6O"
+        alt="image">
+</a>
+<a href="https://www.kenyabuzz.com/lifestyle/kenyabuzz-movie-week-guys-night-out/">
+      <button class="btn btn-info">BUY TICKET</button>
+    </a>
+    </div>
+
+
+    <div class="col-md-3">
+
+<a data-fancybox="gallery" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6GVnQtfAFhmP0EZ-JXF--Q3JMoINEQJE563kfavyVeABPgSuo">
+      <img style="padding-right: 5%"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6GVnQtfAFhmP0EZ-JXF--Q3JMoINEQJE563kfavyVeABPgSuo"
+        alt="image">
+</a>
+<a href="https://www.kenyabuzz.com/movies/movie/cold-pursuit">
+      <button class="btn btn-info">BUY TICKET</button>
+    </a>
+    </div>
+
+  </div>
+</div>
+
+</div>
+{%endblock%}

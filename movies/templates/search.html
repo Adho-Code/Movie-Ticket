@@ -1,0 +1,30 @@
+<!-- {% extends 'base.html' %}
+{% block content %}
+{{ block.super}}
+{% load bootstrap4%}
+<div class="container">
+
+  <div class="row">
+    {% if searched_movie %}
+    <h2>Found {{ searched_movie |length }} of searched term {{message}}</h2>
+    {% else %}
+    <h2> Found 0 for the search term {{message}}</h2>
+    {% endif %}
+
+  </div>
+
+  <div class="row">
+
+    {% if searched_movie %}
+    {% for images in searched_movie %}
+    <div class="col-md-4">
+      <a data-fancybox href="{{images.images_path.url}}" ></a>
+        <img src=" {{images.image_path.url}}" alt="image" style="max-height: 400px; max-width:300px;">
+      
+      </a>
+    </div>
+    {% endfor %}
+    {% endif %}
+  </div>
+</div>
+{% endblock %} -->
